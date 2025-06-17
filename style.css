@@ -1,0 +1,202 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Poppins:wght@300;600&display=swap');
+
+:root {
+  --primary-color: #6e57e0;  /* neon purple */
+  --secondary-color: #2acfcf; /* teal-cyan */
+  --background-color: #0d1117; /* GitHub dark background */
+  --text-color: #c9d1d9;
+  --accent-color: #8b5cf6;
+  --btn-bg: #2389da;
+  --btn-hover-bg: #56a3f1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  background: #161b22;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(110, 87, 224, 0.6);
+}
+
+header.hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header.hero h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 8px var(--primary-color);
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+header.hero h2 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.6rem;
+}
+
+.tagline {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #8f94a5;
+  margin-bottom: 1.8rem;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn, .btn-secondary {
+  display: inline-block;
+  padding: 0.65rem 1.6rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(42, 207, 207, 0.4);
+  user-select: none;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border: none;
+  box-shadow: 0 0 12px var(--secondary-color);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #21a0a0;
+  box-shadow: 0 0 20px #21a0a0;
+  outline: none;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  box-shadow: none;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  box-shadow: 0 0 12px var(--secondary-color);
+  outline: none;
+}
+
+section {
+  margin-bottom: 2.8rem;
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1rem;
+  animation: slideInLeft 1s ease forwards;
+}
+
+section h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.03em;
+}
+
+section p, section a {
+  font-size: 1rem;
+  color: var(--text-color);
+  word-break: break-word;
+}
+
+section a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+section a:hover,
+section a:focus {
+  color: var(--accent-color);
+  outline: none;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6e6e7e;
+  border-top: 1px solid #22262f;
+  padding-top: 1rem;
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 6px var(--primary-color), 0 0 15px var(--primary-color);
+  }
+  50% {
+    text-shadow: 0 0 20px var(--primary-color), 0 0 35px var(--primary-color);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem 1.5rem;
+  }
+  
+  header.hero h1 {
+    font-size: 2rem;
+  }
+  
+  header.hero h2 {
+    font-size: 1.1rem;
+  }
+  
+  .cta {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
