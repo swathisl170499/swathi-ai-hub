@@ -14,6 +14,26 @@ body {
   padding: 2rem;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #161b22;
+  padding: 1rem 0;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+.navbar a {
+  color: #00e0ff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.navbar a:hover {
+  color: #ff6ec4;
+}
+
 header.hero {
   text-align: center;
   margin-bottom: 3rem;
@@ -102,6 +122,27 @@ section h2 {
 section p {
   font-size: 1rem;
   line-height: 1.6;
+}
+
+section#recommendations, section#certifications {
+  background: #161b22;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 16px rgba(0,224,255,0.04);
+}
+section#recommendations h2,
+section#certifications h2 {
+  color: #ffb86b;
+}
+section#recommendations a,
+section#certifications a {
+  color: #00e0ff;
+  font-weight: 600;
+}
+
+ul {
+  padding-left: 1.2rem;
 }
 
 a {
