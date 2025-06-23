@@ -9,27 +9,37 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+.navbar-wrapper {
   background: #161b22;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   border-radius: 16px;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
 }
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .navbar a {
   color: #00e0ff;
   font-weight: 600;
   text-decoration: none;
   font-size: 1.1rem;
   transition: color 0.2s;
+  white-space: nowrap;
 }
+
 .navbar a:hover {
   color: #ff6ec4;
 }
@@ -131,10 +141,12 @@ section#recommendations, section#certifications {
   margin-bottom: 2rem;
   box-shadow: 0 2px 16px rgba(0,224,255,0.04);
 }
+
 section#recommendations h2,
 section#certifications h2 {
   color: #ffb86b;
 }
+
 section#recommendations a,
 section#certifications a {
   color: #00e0ff;
