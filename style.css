@@ -56,43 +56,54 @@ body {
   text-shadow: 0 0 10px #4ea4ff;
 }
 
-/* HERO SECTION */
+/* === HERO SECTION (VERTICAL LAYOUT) === */
 .hero {
   text-align: center;
   padding: 100px 20px 60px;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  color: #ffffff;
+.vertical-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 120px 20px 80px;
 }
 
-.hero h1 span {
+.vertical-hero .intro h1 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.vertical-hero .intro h1 span {
   color: #4ea4ff;
   text-shadow: 0 0 10px #4ea4ff;
 }
 
-.hero h2 {
-  font-size: 1.3rem;
+.vertical-hero .intro h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
   color: #a3b2d1;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
-.summary {
-  max-width: 900px;
-  margin: 0 auto;
+.vertical-hero .summary {
+  max-width: 850px;
+  margin: 0 auto 40px auto;
   color: #d1d9f0;
   font-size: 1rem;
+  line-height: 1.8;
 }
 
-.buttons {
-  margin-top: 30px;
+.vertical-hero .buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
 }
 
+/* BUTTONS */
 .btn {
   padding: 10px 22px;
   border-radius: 25px;
@@ -280,15 +291,18 @@ footer {
     padding: 40px 20px;
   }
 
-  .hero h1 {
+  .hero h1,
+  .vertical-hero .intro h1 {
     font-size: 2rem;
   }
 
-  .hero h2 {
+  .hero h2,
+  .vertical-hero .intro h2 {
     font-size: 1rem;
   }
 
-  .summary {
+  .summary,
+  .vertical-hero .summary {
     font-size: 0.95rem;
   }
 }
