@@ -2,95 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Explore Projects | Swathi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Swathi AI Hub</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="projects-style.css" />
 </head>
-
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">Swathi<span>AI</span>Hub</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="blogs.html">Blog</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Explore Projects</a>
+      <a href="blogs.html">Blogs</a>
+    </nav>
 
-  <section class="projects-page">
-    <h2>Flagship AI & Data Projects</h2>
+    <header>
+      <h1>🤖 Explore Projects</h1>
+      <p class="subtitle">A blend of Generative AI, RAG, Deep Learning, and Intelligent Automation</p>
+    </header>
 
-    <div class="project-card">
-      <h3>🧠 Clinical Copilot – Agentic RAG for Clinical Trials</h3>
-      <p>
-        Designed an end-to-end Retrieval-Augmented Generation pipeline for clinical trial data using LangChain and FAISS, integrated with Vertex AI CodeStral for LLM reasoning.  
-        Built document ingestion, semantic retrieval, and agent workflows to enable research teams to query unstructured trial documents in natural language with contextual answers and traceable citations.  
-        Optimized embedding storage for 10K clinical notes with real-time vector similarity search.
-      </p>
-      <a href="https://github.com/swathisl170499/clinical-copilot-rag" target="_blank">🔗 View on GitHub</a>
+    <div class="robot-art">
+      <div class="robot">
+        <div class="robot-head">
+          <div class="robot-eye left"></div>
+          <div class="robot-eye right"></div>
+          <div class="robot-mouth"></div>
+        </div>
+        <div class="robot-body"></div>
+        <div class="robot-arm left"></div>
+        <div class="robot-arm right"></div>
+        <div class="robot-leg left"></div>
+        <div class="robot-leg right"></div>
+      </div>
     </div>
 
-    <div class="project-card">
-      <h3>💬 Text2SQL & Agentic Query System</h3>
-      <p>
-        Built a multi-agent LLM framework that converts natural language into SQL queries across heterogeneous databases. Integrated LangGraph for task planning and DSPy for prompt optimization.  
-        The system supports schema retrieval, query validation, and LLM explanation layers for enterprise analytics, enabling “Ask Your Database Anything” capabilities within existing apps.
-      </p>
-      <a href="https://github.com/swathisl170499/Text2SQL-Agentic-RAG" target="_blank">🔗 View on GitHub</a>
-    </div>
+    <section>
+      <ul>
+        <li>
+          <strong>🧠 Text2SQL & Agentic Query System</strong><br>
+          Built an <strong>LLM-based Text2SQL framework</strong> integrating Retrieval-Augmented Generation (RAG) and schema-driven prompt chaining.  
+          Enables users to query structured databases through natural language and receive interpretable SQL with context explanations.<br>
+          <em>Tech Stack:</em> Python, LangChain, FAISS, CodeStral (Vertex AI), SQL, FastAPI<br>
+          <a href="https://github.com/swathisl170499/Text2SQL-Agentic" target="_blank">🔗 View Code</a>
+        </li>
 
-    <div class="project-card">
-      <h3>🧩 UNSPSC Category Generator</h3>
-      <p>
-        Engineered a GPT-based product categorization model that automatically maps enterprise items to UNSPSC codes, reducing manual classification by 50 %.  
-        Combined text embeddings and semantic search to maintain taxonomy consistency across procurement systems.
-      </p>
-      <a href="https://github.com/swathisl170499/UNSPSC_Category_Title_Generation/blob/master/1st.py" target="_blank">🔗 View on GitHub</a>
-    </div>
+        <li>
+          <strong>🏥 Clinical Copilot (Agentic RAG System)</strong><br>
+          Developed a <strong>Clinical Trial AI Copilot</strong> leveraging Vertex AI CodeStral, LangChain, and FAISS.  
+          Designed for researchers to retrieve, summarize, and reason over patient and protocol data using natural-language prompts.<br>
+          <em>Tech Stack:</em> Python, Vertex AI (CodeStral), LangChain, FAISS, FastAPI, Pandas<br>
+          <a href="https://github.com/swathisl170499/Clinical-RAG-Copilot" target="_blank">🔗 View Code</a>
+        </li>
 
-    <div class="project-card">
-      <h3>🧬 GAN-Based Synthetic Data Generator</h3>
-      <p>
-        Implemented a Generative Adversarial Network to generate synthetic customer datasets for classification and anomaly detection tasks. This project improved model robustness and balanced class distribution in production pipelines.
-      </p>
-      <a href="https://github.com/swathisl170499/Generative_adversarial_networks/blob/master/GAN.py" target="_blank">🔗 View on GitHub</a>
-    </div>
+        <li>
+          <strong>🧮 GAN-Based Customer Data Generation</strong><br>
+          Developed a GAN generating 5,000+ realistic synthetic customer data samples, improving data diversity and realism over rule-based methods.<br>
+          <em>Tech Stack:</em> Python, TensorFlow, Keras, Pandas<br>
+          <a href="https://github.com/swathisl170499/Generative_adversarial_networks/blob/master/GAN.py" target="_blank">🔗 View Code</a>
+        </li>
 
-    <div class="project-card">
-      <h3>🚗 Autonomous Driving TurtleBot</h3>
-      <p>
-        Developed an autonomous navigation stack for TurtleBot using ROS and MATLAB. Implemented CNN-based lane detection and LiDAR-driven path planning for obstacle avoidance in simulation environments.
-      </p>
-      <a href="https://github.com/swathisl170499/Autonomous-Driving-TurtleBot-" target="_blank">🔗 View on GitHub</a>
-    </div>
+        <li>
+          <strong>🚗 Autonomous-Driving TurtleBot</strong><br>
+          Created an autonomous driving algorithm using ROS, image processing, and Lidar for lane detection and obstacle avoidance.<br>
+          <em>Tech Stack:</em> Python, ROS, OpenCV, TensorFlow<br>
+          <a href="https://github.com/swathisl170499/Autonomous-Driving-TurtleBot-" target="_blank">🔗 View Code</a>
+        </li>
 
-    <div class="project-card">
-      <h3>💓 Health Monitoring Alert System</h3>
-      <p>
-        Designed an IoT-driven health alert pipeline that analyzes wearable sensor data to detect abnormal patterns and trigger preventive alerts for clinicians.  
-        Applied signal processing and anomaly detection models for early diagnostic support.
-      </p>
-      <a href="https://github.com/swathisl170499/Health_Monitoring_System_Using_Wearable_Tech_Data/blob/master/Health.py" target="_blank">🔗 View on GitHub</a>
-    </div>
+        <li>
+          <strong>❤️ Health Monitoring Alert System</strong><br>
+          Built a Random Forest classifier to predict health alerts with 90%+ accuracy and identified key physiological indicators.<br>
+          <em>Tech Stack:</em> Python, Scikit-Learn, Pandas, Matplotlib<br>
+          <a href="https://github.com/swathisl170499/Health_Monitoring_System_Using_Wearable_Tech_Data/blob/master/Health.py" target="_blank">🔗 View Code</a>
+        </li>
 
-    <div class="project-card">
-      <h3>🛰️ Semantic Segmentation for Autonomous Driving</h3>
-      <p>
-        Created a deep CNN-based semantic segmentation pipeline for scene understanding in self-driving vehicles.  
-        Used U-Net and OpenCV to segment lanes and road features, enhancing object detection accuracy for real-time navigation.
-      </p>
-      <a href="https://github.com/swathisl170499/Semantic_Segmentation.py" target="_blank">🔗 View on GitHub</a>
-    </div>
+        <li>
+          <strong>📦 AI-Powered UNSPSC Category Generator</strong><br>
+          Automated generation of 10,000+ UNSPSC category titles using GPT-3.5, improving code enrichment scalability and consistency.<br>
+          <em>Tech Stack:</em> Python, OpenAI API, Pandas, LangChain<br>
+          <a href="https://github.com/swathisl170499/UNSPSC_Category_Title_Generation/blob/master/1st.py" target="_blank">🔗 View Code</a>
+        </li>
 
-    <div class="buttons center">
-      <a href="index.html" class="btn secondary">⬅ Back to Home</a>
-    </div>
-  </section>
+        <li>
+          <strong>🛰 Semantic Segmentation for Autonomous Driving</strong><br>
+          Designed a deep learning segmentation model for autonomous driving, achieving >85% IoU and real-time performance for multi-class detection (road, vehicle, pedestrian, lane).<br>
+          <em>Tech Stack:</em> Python, TensorFlow, OpenCV, Keras<br>
+          <a href="https://github.com/swathisl170499/Semantic_Segmentation.py" target="_blank">🔗 View Code</a>
+        </li>
+      </ul>
+
+      <div class="buttons center">
+        <a href="index.html" class="btn secondary">⬅ Back to Home</a>
+      </div>
+    </section>
+  </div>
 
   <footer>
-    <p>© 2025 Lakshmi Swathi Sreedhar | Swathi AI Hub</p>
+    <p>© 2025 Lakshmi Swathi Sreedhar | Swathi AI Hub — Designed with 💙</p>
   </footer>
 </body>
 </html>
