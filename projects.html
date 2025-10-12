@@ -2,65 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Explore Projects | Swathi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="projects-style.css" />
+  <title>Projects | Swathi AI Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-  <div class="stars"></div>
-  <div class="stars2"></div>
-  <div class="stars3"></div>
-  <div class="container">
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Explore Projects</a>
-    </nav>
-    <header>
-      <h1>🤖 Explore Projects</h1>
-    </header>
-    <div class="robot-art">
-      <div class="robot">
-        <div class="robot-head">
-          <div class="robot-eye left"></div>
-          <div class="robot-eye right"></div>
-          <div class="robot-mouth"></div>
-        </div>
-        <div class="robot-body"></div>
-        <div class="robot-arm left"></div>
-        <div class="robot-arm right"></div>
-        <div class="robot-leg left"></div>
-        <div class="robot-leg right"></div>
-      </div>
+  <nav class="navbar">
+    <div class="logo">Swathi<span>AI</span>Hub</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blogs.html">Blog</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="projects-page">
+    <h2>Featured Projects</h2>
+
+    <div class="project-card">
+      <h3>🧠 Clinical RAG Data Extraction Pipeline</h3>
+      <p>Production-ready RAG system built with LangChain, FAISS, and Azure OpenAI for clinical trial datasets — enabling semantic search, summarization, and LLM-driven reasoning.</p>
+      <a href="https://github.com/swathisl170499/clinical-copilot-rag" target="_blank">🔗 GitHub Repo</a>
     </div>
-    <section>
-      <ul>
-        <li>
-          <strong>GAN-Based Customer Data Generation</strong><br>
-          Developed a GAN generating 5,000+ realistic synthetic customer data samples, improving data diversity and realism over rule-based methods.<br>
-          <a href="https://github.com/swathisl170499/Generative_adversarial_networks/blob/master/GAN.py" target="_blank">View Code</a>
-        </li>
-        <li>
-          <strong>Autonomous-Driving-TurtleBot</strong><br>
-          Created an autonomous driving algorithm with ROS, image processing, and Lidar, enabling lane detection and obstacle avoidance.<br>
-          <a href="https://github.com/swathisl170499/Autonomous-Driving-TurtleBot-" target="_blank">View Code</a>
-        </li>
-        <li>
-          <strong>Health Monitoring Alert System</strong><br>
-          Built a Random Forest classifier to predict health alerts with 90%+ accuracy and analyzed key features.<br>
-          <a href="https://github.com/swathisl170499/Health_Monitoring_System_Using_Wearable_Tech_Data/blob/master/Health.py" target="_blank">View Code</a>
-        </li>
-        <li>
-          <strong>AI-Powered UNSPSC Category Generator</strong><br>
-          Automated generation of 10,000+ UNSPSC category titles using GPT-3.5, ensuring scalability and performance.<br>
-          <a href="https://github.com/swathisl170499/UNSPSC_Category_Title_Generation/blob/master/1st.py" target="_blank">View Code</a>
-        </li>
-        <li>
-          <strong>Semantic Segmentation for Autonomous Driving</strong><br>
-          Developed a semantic segmentation model for autonomous driving, achieving &gt;85% IoU and real-time speeds for detecting roads, vehicles, pedestrians, and lanes.<br>
-          <a href="https://github.com/swathisl170499/Semantic_Segmentation.py" target="_blank">View Code</a>
-        </li>
-      </ul>
-    </section>
-  </div>
+
+    <div class="project-card">
+      <h3>💬 Text2SQL & Agentic Query System</h3>
+      <p>Multi-agent LLM pipeline that translates natural language to SQL queries with schema understanding, retrieval, and validation using LangGraph + DSPy.</p>
+      <a href="https://github.com/swathisl170499/Text2SQL-Agentic-RAG" target="_blank">🔗 GitHub Repo</a>
+    </div>
+
+    <div class="project-card">
+      <h3>🧬 GAN-Based Customer Data Generation</h3>
+      <p>Developed a GAN framework for synthetic customer data creation to augment training datasets for classification and anomaly detection tasks.</p>
+      <a href="https://github.com/swathisl170499/Generative_adversarial_networks/blob/master/GAN.py" target="_blank">🔗 GitHub Repo</a>
+    </div>
+
+    <div class="project-card">
+      <h3>🚗 Autonomous Driving TurtleBot</h3>
+      <p>ROS + MATLAB based autonomous navigation system using LIDAR and CNNs for real-time obstacle avoidance and path planning.</p>
+      <a href="https://github.com/swathisl170499/Autonomous-Driving-TurtleBot-" target="_blank">🔗 GitHub Repo</a>
+    </div>
+
+    <div class="project-card">
+      <h3>💓 Health Monitoring Alert System</h3>
+      <p>AI-powered alert framework analyzing wearable sensor data to detect anomalies and trigger preventive health notifications.</p>
+      <a href="https://github.com/swathisl170499/Health_Monitoring_System_Using_Wearable_Tech_Data/blob/master/Health.py" target="_blank">🔗 GitHub Repo</a>
+    </div>
+
+    <div class="project-card">
+      <h3>🧩 UNSPSC Category Generator</h3>
+      <p>GPT-based product categorization engine that reduces manual classification effort by 50% and improves data governance consistency.</p>
+      <a href="https://github.com/swathisl170499/UNSPSC_Category_Title_Generation/blob/master/1st.py" target="_blank">🔗 GitHub Repo</a>
+    </div>
+
+    <div class="project-card">
+      <h3>🛰️ Semantic Segmentation for Autonomous Driving</h3>
+      <p>Implemented semantic segmentation pipeline for scene understanding using deep CNN architectures for autonomous navigation.</p>
+      <a href="https://github.com/swathisl170499/Semantic_Segmentation.py" target="_blank">🔗 GitHub Repo</a>
+    </div>
+
+    <div class="buttons center">
+      <a href="index.html" class="btn secondary">⬅ Back to Home</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Lakshmi Swathi Sreedhar | Swathi AI Hub</p>
+  </footer>
 </body>
 </html>
