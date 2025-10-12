@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet" />
 </head>
-<body>
 
+<body>
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">Swathi<span>AI</span>Hub</div>
@@ -17,6 +17,7 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="#publications">Publications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -27,7 +28,7 @@
       <h1>Building Scalable <span>AI Systems</span> that Think & Deliver</h1>
       <p>AI Engineer | Forward-Deployed Product Builder | Generative AI Strategist</p>
       <div class="buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="projects.html" class="btn primary">View Projects</a>
         <a href="LAKSHMI_SWATHI_SREEDHAR_PORTFOLIO.pdf" class="btn secondary" target="_blank">View Resume</a>
       </div>
     </div>
@@ -37,16 +38,17 @@
   <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      I’m a Generative AI and LLM-focused Engineer passionate about designing and scaling intelligent systems that move seamlessly from research to production.
-      My work spans Text2SQL automation, RAG pipelines, and agentic AI frameworks—bridging engineering, data, and user experience to deliver measurable business impact.
+      I’m an AI Engineer focused on bridging research and real-world production.
+      My expertise spans Generative AI, RAG pipelines, Text2SQL automation, and agentic AI systems.
+      I bring a forward-deployed mindset—designing scalable, customer-facing solutions that deliver measurable impact.
     </p>
 
     <div class="skills">
       <h3>Core Skills</h3>
       <div class="skills-grid">
         <span>Python</span><span>LangChain</span><span>FAISS</span><span>Azure</span>
-        <span>GCP</span><span>RAG Pipelines</span><span>Agentic AI</span><span>MLflow</span>
-        <span>Docker</span><span>SQL</span><span>Data Engineering</span><span>FastAPI</span>
+        <span>GCP</span><span>Agentic AI</span><span>RAG Pipelines</span><span>SQL</span>
+        <span>MLflow</span><span>FastAPI</span><span>Docker</span><span>Data Engineering</span>
       </div>
     </div>
   </section>
@@ -54,48 +56,53 @@
   <!-- PROJECTS -->
   <section id="projects" class="projects">
     <h2>Highlighted Projects</h2>
-
     <div class="project-card">
       <h3>🧠 Clinical RAG Data Extraction Pipeline</h3>
-      <p>Built a production-ready clinical knowledge extraction pipeline using FAISS, LangChain, and Azure OpenAI for clinical trial documents. Enabled intelligent Q&A, summarization, and retrieval-augmented workflows.</p>
-      <a href="https://github.com/swathisl170499" target="_blank">🔗 View on GitHub</a>
+      <p>Production-ready clinical knowledge retrieval system using FAISS, LangChain, and Azure OpenAI for trial datasets — enabling semantic retrieval and agentic summarization.</p>
+      <a href="projects.html#clinical-rag">🔗 Explore Project</a>
     </div>
-
     <div class="project-card">
       <h3>💬 Text2SQL & Agentic Query System</h3>
-      <p>Developed a multi-agent Text2SQL system using LangChain + LangGraph + DSPy to automate SQL generation, schema understanding, and reasoning-driven database exploration.</p>
-      <a href="https://swathisl170499.github.io/swathi-ai-hub/projects.html" target="_blank">🔗 Project Details</a>
-    </div>
-
-    <div class="project-card">
-      <h3>⚙️ UNSPSC Category Generator</h3>
-      <p>Created a GPT-based product categorization system that reduces manual classification time by 50%, improving supply data standardization and analytics readiness.</p>
+      <p>LLM-based natural language SQL query generator with schema understanding and reasoning — built with LangGraph, DSPy, and FastAPI.</p>
+      <a href="projects.html#text2sql">🔗 Explore Project</a>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
   <section id="experience" class="experience">
     <h2>Experience</h2>
-
     <div class="exp-card">
-      <h3>ChainSys Corporation — AI/ML Engineer (09/2023 – 05/2025)</h3>
-      <p>Designed and deployed customer-facing Generative AI systems, RAG pipelines, and Text2SQL platforms integrated within ChainSys Smart Data Platform™ — improving decision accuracy by 35% and empowering 10K+ users.</p>
+      <h3>ChainSys Corporation — AI/ML Engineer (Sep 2023 – May 2025)</h3>
+      <p>Led enterprise-scale AI solutions including RAG, Text2SQL, and agentic systems integrated into Smart Data Platform™. Improved decision accuracy by 35%, impacting 10K+ users.</p>
     </div>
-
     <div class="exp-card">
-      <h3>ParaIllel Inc — ML Developer Intern (03/2023 – 08/2023)</h3>
-      <p>Built GAN-based recommendation engines and multimodal AI pipelines, improving personalization by 25% and delivering explainability dashboards for stakeholders.</p>
+      <h3>ParaIllel Inc — ML Developer Intern (Mar 2023 – Aug 2023)</h3>
+      <p>Developed GAN-based recommendation engines and explainability dashboards for cross-domain personalization.</p>
     </div>
   </section>
 
   <!-- EDUCATION -->
   <section id="education" class="education">
-    <h2>Education & Certifications</h2>
+    <h2>Education</h2>
     <ul>
       <li><strong>MIT xPRO</strong> — No-Code AI & ML (2025)</li>
-      <li><strong>University of Michigan, Dearborn</strong> — MS Artificial Intelligence (2023)</li>
-      <li><strong>Dayananda Sagar College of Engineering</strong> — BE Aeronautical Engineering (2020)</li>
+      <li><strong>University of Michigan, Dearborn</strong> — M.S. Artificial Intelligence (2023)</li>
+      <li><strong>Dayananda Sagar College of Engineering</strong> — B.E. Aeronautical Engineering (2020)</li>
     </ul>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="publications">
+    <h2>Publications & Blogs</h2>
+    <div class="pub-card">
+      <h3>Advancing Precision Medicine through Multimodal AI</h3>
+      <p>Proposed a multimodal AI framework integrating imaging, clinical, and wearable data for personalized diagnostics and federated learning.</p>
+      <a href="https://medium.com/@swathisl" target="_blank">Read on Medium →</a>
+    </div>
+    <div class="pub-card">
+      <h3>Speak the Language of AI: Mastering Prompt Engineering</h3>
+      <p>Introduced structured prompt-tuning workflows to optimize LLM reasoning for real-world applications.</p>
+    </div>
   </section>
 
   <!-- CONTACT -->
@@ -113,5 +120,13 @@
     <p>© 2025 Lakshmi Swathi Sreedhar | Built with 💙 using HTML, CSS & AI inspiration.</p>
   </footer>
 
+  <script>
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('section').forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < window.innerHeight * 0.85) sec.classList.add('visible');
+      });
+    });
+  </script>
 </body>
 </html>
