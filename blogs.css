@@ -54,10 +54,10 @@ body {
   color: #00c6ff;
 }
 
-/* ---------- BLOG SECTION ---------- */
+/* ---------- BLOGS PAGE ---------- */
 .blogs {
   padding: 8rem 2rem 4rem;
-  max-width: 900px;
+  max-width: 950px;
   margin: auto;
   text-align: center;
 }
@@ -68,6 +68,7 @@ h2 {
   margin-bottom: 2.5rem;
 }
 
+/* ---------- BLOG CARDS ---------- */
 .blog-card {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
@@ -149,5 +150,9 @@ footer {
 
   h2 {
     font-size: 1.6rem;
+  }
+
+  .blog-card {
+    padding: 1.4rem;
   }
 }
