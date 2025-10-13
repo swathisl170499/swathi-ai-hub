@@ -12,6 +12,31 @@ body {
   scroll-behavior: smooth;
 }
 
+/* === GLOBAL ANIMATION === */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+section:nth-of-type(1) { animation-delay: 0.1s; }
+section:nth-of-type(2) { animation-delay: 0.2s; }
+section:nth-of-type(3) { animation-delay: 0.3s; }
+section:nth-of-type(4) { animation-delay: 0.4s; }
+section:nth-of-type(5) { animation-delay: 0.5s; }
+section:nth-of-type(6) { animation-delay: 0.6s; }
+
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -152,6 +177,8 @@ body {
 
 .center-btn {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /* SECTION HEADINGS */
@@ -222,48 +249,80 @@ section h2 {
   margin-bottom: 8px;
 }
 
-/* EDUCATION, CERTIFICATIONS, PUBLICATIONS, RECOMMENDATIONS */
+/* === EDUCATION, CERTIFICATIONS, AI STORY, PUBLICATIONS, RECOMMENDATIONS === */
 .education,
 .certifications,
+.ai-story,
 .publications,
 .recommendations {
-  padding: 50px 80px;
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .education ul,
 .certifications ul,
 .publications ul {
   list-style: none;
-  padding-left: 0;
-  color: #cfd5eb;
+  padding: 0;
+  margin-top: 20px;
 }
 
 .education li,
 .certifications li,
 .publications li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: #cfd5eb;
 }
 
+.education h2,
+.certifications h2,
+.ai-story h2,
+.publications h2,
+.recommendations h2 {
+  color: #4ea4ff;
+  text-shadow: 0 0 10px #4ea4ff;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.education p,
 .certifications p,
+.ai-story p,
 .publications p,
 .recommendations p {
-  max-width: 900px;
-  margin: 0 auto 20px auto;
+  text-align: center;
   color: #d1d9f0;
+  max-width: 800px;
+  margin: 0 auto 25px auto;
+  line-height: 1.8;
+}
+
+/* === Center Buttons === */
+.center-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.recommendations a.btn {
+  display: inline-block;
+  margin-top: 15px;
   text-align: center;
 }
 
-.certifications a,
-.publications a,
-.recommendations a {
-  color: #4ea4ff;
-  text-decoration: none;
-}
-
-.certifications a:hover,
-.publications a:hover,
-.recommendations a:hover {
-  text-shadow: 0 0 10px #4ea4ff;
+/* === Optional: Soft Neon Divider Between Sections === */
+.divider {
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #4ea4ff, transparent);
+  border-radius: 2px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px #4ea4ff;
+  opacity: 0.7;
 }
 
 /* FOOTER */
