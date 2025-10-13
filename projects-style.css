@@ -81,27 +81,6 @@ body {
 }
 
 /* =========================
-   ROBOT
-========================= */
-.robot-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0 40px;
-}
-
-.robot-img {
-  width: 230px;
-  opacity: 0.9;
-  animation: float 4s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
-
-/* =========================
    PROJECTS GRID
 ========================= */
 .projects {
