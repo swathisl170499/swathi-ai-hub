@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blogs | Swathi AI Hub</title>
   <link rel="stylesheet" href="blogs.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">Swathi<span>AI</span>Hub</div>
     <ul class="nav-links">
@@ -18,87 +17,89 @@
     </ul>
   </nav>
 
-  <!-- HEADER -->
-  <header>
-    <h1>🚀 Swathi's AI Blog Space</h1>
-    <p>
-      Insights on <strong>AI</strong>, <strong>Generative Tech</strong>, <strong>RAG</strong>, and <strong>Multimodal Models</strong> —  
-      a reflection of my journey as an engineer building practical, human-centered AI systems.
-    </p>
+  <header class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Thought Leadership</p>
+      <h1>🚀 Swathi's AI Blog Space</h1>
+      <p class="lead">
+        Insights on AI, Generative Tech, RAG, and Multimodal Models — a reflection of my journey as an engineer building practical, human-centered AI systems.
+      </p>
+    </div>
   </header>
 
-  <!-- BLOG LIST -->
   <main class="blog-container">
-
-    <div class="blog-card">
-      <a href="https://medium.com/@swathisl/unlock-data-insights-how-ai-translates-everyday-language-into-powerful-sql-queries-%EF%B8%8F-f3e58ba445db" target="_blank">
-        🧠 Unlock Data Insights: How AI Translates Everyday Language into Powerful SQL Queries ⚡️
-      </a>
+    <article class="blog-card">
+      <div class="blog-header">
+        <h3>🧠 Unlock Data Insights: How AI Translates Everyday Language into Powerful SQL Queries ⚡️</h3>
+        <span class="pill">Text2SQL</span>
+      </div>
       <p class="blog-snippet">
-        From natural language to fully working SQL — this project makes querying your data feel like chatting with a genius coworker.
-        No coding required — just ask and get instant insights.
+        From natural language to fully working SQL — this project makes querying your data feel like chatting with a genius coworker. No coding required — just ask and get instant insights.
       </p>
-    </div>
+      <a href="https://medium.com/@swathisl/unlock-data-insights-how-ai-translates-everyday-language-into-powerful-sql-queries-%EF%B8%8F-f3e58ba445db" target="_blank">Read on Medium →</a>
+    </article>
 
-    <div class="blog-card">
-      <a href="https://medium.com/@swathisl/supplier-quality-management-bots-the-future-of-supplier-accountability-with-ai-634a88958c14?sk=f2d464d94708d890cb603b02adaf2ebb" target="_blank">
-        🤖 Supplier Quality Management Bots: The Future of Supplier Accountability with AI
-      </a>
+    <article class="blog-card">
+      <div class="blog-header">
+        <h3>🤖 Supplier Quality Management Bots: The Future of Supplier Accountability with AI</h3>
+        <span class="pill">Enterprise AI</span>
+      </div>
       <p class="blog-snippet">
-        Discover how AI-powered bots are transforming supplier quality management — monitoring KPIs,
-        automating root cause analysis, and improving accountability across industries.
+        Discover how AI-powered bots are transforming supplier quality management — monitoring KPIs, automating root cause analysis, and improving accountability across industries.
       </p>
-    </div>
+      <a href="https://medium.com/@swathisl/supplier-quality-management-bots-the-future-of-supplier-accountability-with-ai-634a88958c14?sk=f2d464d94708d890cb603b02adaf2ebb" target="_blank">Read on Medium →</a>
+    </article>
 
-    <div class="blog-card">
-      <a href="https://medium.com/@swathisl/building-better-ai-solutions-with-a-hybrid-no-code-and-code-approach-c34081d1379c" target="_blank">
-        🔧 Building Better AI Solutions with a Hybrid No-Code and Code Approach
-      </a>
+    <article class="blog-card">
+      <div class="blog-header">
+        <h3>🔧 Building Better AI Solutions with a Hybrid No-Code and Code Approach</h3>
+        <span class="pill">Product Ops</span>
+      </div>
       <p class="blog-snippet">
-        Explore how no-code tools like KNIME and RapidMiner combine with custom-coded pipelines
-        to accelerate AI solutioning and empower both developers and analysts.
+        Explore how no-code tools like KNIME and RapidMiner combine with custom-coded pipelines to accelerate AI solutioning and empower both developers and analysts.
       </p>
-    </div>
+      <a href="https://medium.com/@swathisl/building-better-ai-solutions-with-a-hybrid-no-code-and-code-approach-c34081d1379c" target="_blank">Read on Medium →</a>
+    </article>
 
-    <div class="blog-card">
-      <a href="https://medium.com/@swathisl/how-generative-ai-rag-and-agentic-ai-can-revolutionize-the-finance-industry-7f2e53f315a2" target="_blank">
-        💸 How Generative AI, RAG, and Agentic AI Can Revolutionize Finance
-      </a>
+    <article class="blog-card">
+      <div class="blog-header">
+        <h3>💸 How Generative AI, RAG, and Agentic AI Can Revolutionize Finance</h3>
+        <span class="pill">RAG + Agents</span>
+      </div>
       <p class="blog-snippet">
-        A breakdown of how LLMs, RAG, and autonomous agent systems
-        are reshaping the financial sector for transparency, trust, and faster insights.
+        A breakdown of how LLMs, RAG, and autonomous agent systems are reshaping the financial sector for transparency, trust, and faster insights.
       </p>
-    </div>
+      <a href="https://medium.com/@swathisl/how-generative-ai-rag-and-agentic-ai-can-revolutionize-the-finance-industry-7f2e53f315a2" target="_blank">Read on Medium →</a>
+    </article>
 
-    <div class="blog-card">
-      <a href="https://medium.com/@swathisl/the-ai-doctor-how-multimodal-ai-is-revolutionizing-healthcare-5ec7ad8dbc04" target="_blank">
-        🏥 The AI Doctor: How Multimodal AI Is Revolutionizing Healthcare
-      </a>
+    <article class="blog-card">
+      <div class="blog-header">
+        <h3>🏥 The AI Doctor: How Multimodal AI Is Revolutionizing Healthcare</h3>
+        <span class="pill">Multimodal AI</span>
+      </div>
       <p class="blog-snippet">
-        Multimodal AI integrates wearable data, genetics, and clinical text to deliver personalized healthcare
-        and early detection insights for clinicians and patients alike.
+        Multimodal AI integrates wearable data, genetics, and clinical text to deliver personalized healthcare and early detection insights for clinicians and patients alike.
       </p>
-    </div>
+      <a href="https://medium.com/@swathisl/the-ai-doctor-how-multimodal-ai-is-revolutionizing-healthcare-5ec7ad8dbc04" target="_blank">Read on Medium →</a>
+    </article>
 
-    <div class="blog-card">
-      <a href="https://medium.com/@swathisl/welcome-to-the-genesis-of-innovation-2d065ab788fb" target="_blank">
-        🧬 The Evolution of GANs: A Catalyst for Industry Transformation
-      </a>
+    <article class="blog-card">
+      <div class="blog-header">
+        <h3>🧬 The Evolution of GANs: A Catalyst for Industry Transformation</h3>
+        <span class="pill">Generative Models</span>
+      </div>
       <p class="blog-snippet">
-        From early experiments to real-world applications — GANs have transformed how we synthesize data,
-        design products, and unlock new creative workflows.
+        From early experiments to real-world applications — GANs have transformed how we synthesize data, design products, and unlock new creative workflows.
       </p>
-    </div>
-
+      <a href="https://medium.com/@swathisl/welcome-to-the-genesis-of-innovation-2d065ab788fb" target="_blank">Read on Medium →</a>
+    </article>
   </main>
 
-  <!-- BACK TO HOME -->
   <div class="buttons center">
-    <a href="index.html" class="btn secondary">⬅️ Back to Home</a>
+    <a href="index.html" class="btn ghost">⬅️ Back to Home</a>
   </div>
 
-  <!-- FOOTER -->
-  <footer>
+  <footer class="footer">
     <p>© 2025 Lakshmi Swathi Sreedhar | AI Engineer Portfolio</p>
   </footer>
 </body>
