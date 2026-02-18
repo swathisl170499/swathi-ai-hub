@@ -32,9 +32,9 @@
           <li>Customer-focused delivery that bridges product strategy with technical execution.</li>
         </ul>
         <div class="hero-actions">
-          <a href="mailto:swathisl@umich.edu" class="btn primary">📧 Email Me</a>
-          <a href="https://github.com/swathisl170499" target="_blank" class="btn ghost">💻 GitHub</a>
-          <a href="https://www.linkedin.com/in/lakshmi-swathi-sreedhar-425859130/" target="_blank" class="btn ghost">🔗 LinkedIn</a>
+          <a href="mailto:swathisl@umich.edu" class="btn primary" data-track="email_click">📧 Email Me</a>
+          <a href="https://github.com/swathisl170499" target="_blank" class="btn ghost" data-track="github_click">💻 GitHub</a>
+          <a href="https://www.linkedin.com/in/lakshmi-swathi-sreedhar-425859130/" target="_blank" class="btn ghost" data-track="linkedin_click">🔗 LinkedIn</a>
         </div>
       </div>
 
@@ -66,7 +66,43 @@
         <p>
           Here’s a concise overview of my journey blending AI engineering, data intelligence, and product innovation. If you’re passionate about building impactful AI systems or exploring applied AI at scale, you’ll find my full resume below.
         </p>
-        <a href="assets/Lakshmi_Swathi_Sreedhar_Resume.pdf" target="_blank" class="btn primary">View Résumé</a>
+        <a href="assets/Lakshmi_Swathi_Sreedhar_Resume.pdf" target="_blank" class="btn primary" data-track="resume_opened">View Résumé</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="panel agentic-panel">
+        <h2>🤖 AI Concierge (Beta)</h2>
+        <p>
+          Ask naturally about role fit, projects, or my resume. This assistant can guide visitors and trigger events that you can send to Slack/email via webhook automation.
+        </p>
+        <div id="agentic-log" class="agentic-log" aria-live="polite">
+          <p class="message assistant">Assistant: Hi! Ask me about resume, projects, or collaboration options.</p>
+        </div>
+        <form id="agentic-form" class="agentic-form">
+          <input
+            id="agentic-input"
+            type="text"
+            placeholder="Example: Show resume or projects relevant for AI Engineer roles"
+            aria-label="Ask the AI concierge"
+          />
+          <button type="submit" class="btn primary">Send</button>
+        </form>
+        <div class="quick-prompts">
+          <button class="btn ghost" type="button" data-agentic-prompt="Show me your resume">📄 Show resume</button>
+          <button class="btn ghost" type="button" data-agentic-prompt="Explain your top projects and what you built">🧠 Explain projects</button>
+          <button class="btn ghost" type="button" data-agentic-prompt="How can I contact you?">📬 Contact</button>
+        </div>
+        <div class="voice-controls">
+          <button id="voice-resume-btn" class="btn primary" type="button" data-track="voice_resume_clicked">🎙️ Explain Resume with Voice</button>
+          <button id="voice-stop-btn" class="btn ghost" type="button">⏹️ Stop Voice</button>
+          <p id="voice-status" class="voice-status">Voice initializing...</p>
+        </div>
+        <p class="agentic-note">
+          Privacy note: visitor identity is only known if they voluntarily share contact details (for example through email or a form).
+        </p>
       </div>
     </div>
   </section>
@@ -258,5 +294,6 @@
   <footer class="footer">
     <p>© 2025 Lakshmi Swathi Sreedhar | Designed with passion and love</p>
   </footer>
+  <script src="agentic.js"></script>
 </body>
 </html>
