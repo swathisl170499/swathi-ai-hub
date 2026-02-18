@@ -20,7 +20,7 @@ When someone lands on the homepage, they can:
    - “What healthcare project did you build?”
    - “Show me your SQL project impact.”
    - “Summarize your resume in voice.”
-4. **Hear a voice summary** — the page can narrate a concise resume summary using browser text-to-speech (female-preferred voice when available).
+4. **Hear a voice summary** — the page can narrate a concise resume summary using browser text-to-speech.
 
 So this is not only a portfolio — it is a small **agentic experience** for recruiters.
 
@@ -45,8 +45,6 @@ Example behavior:
 ### 2) Voice-enabled resume summary
 Visitors can click a button to hear a spoken summary of my profile and experience.
 - Uses browser `speechSynthesis`.
-- Prefers female-sounding voices if available on that device.
-- Falls back gracefully when such voices are unavailable.
 
 ### 3) Lightweight visitor intent tracking
 Important interactions can be sent to a webhook so I can get notified when someone:
